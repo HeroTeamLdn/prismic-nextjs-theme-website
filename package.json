@@ -1,7 +1,7 @@
 {
-  "name": "prismic-next-blog",
+  "name": "prismic-nextjs-theme-website",
   "version": "1.0.0",
-  "description": "Guide code for building a simple blog that uses Prismic+Next+Now",
+  "description": "Strater kit theme for building standard website with landing page, blog and blog posts, with author and multiple slice types",
   "main": "index.js",
   "scripts": {
     "dev": "next",
