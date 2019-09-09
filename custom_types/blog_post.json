@@ -1,0 +1,97 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "e.g. post-name"
+      }
+    },
+    "post_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Blog Post Title",
+        "placeholder": "e.g. Inspirational Post Title"
+      }
+    },
+    "date_of_post": {
+      "type": "Date",
+      "config": {
+        "label": "Date of Post"
+      }
+    },
+    "author": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["author"],
+        "label": "Author",
+        "placeholder": "Select Author"
+      }
+    },
+    "post_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1600,
+          "height": 900
+        },
+        "thumbnails": [],
+        "label": "Post Image"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "text": {
+            "type": "Slice",
+            "fieldset": "Text",
+            "description": "Rich Text Section",
+            "icon": "text_fields",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "label": "text",
+                  "placeholder": "Your content here"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "SEO": {
+    "meta_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "meta_title"
+      }
+    },
+    "meta_desc": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "meta_desc"
+      }
+    },
+    "og_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1200,
+          "height": 630
+        },
+        "thumbnails": [],
+        "label": "og_image"
+      }
+    }
+  }
+}

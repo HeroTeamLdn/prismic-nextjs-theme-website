@@ -1,0 +1,32 @@
+[
+  {
+    "id": "author",
+    "name": "Author",
+    "repeatable": true,
+    "value": "author.json"
+  },
+  {
+    "id": "basic_page",
+    "name": "Basic Page",
+    "repeatable": true,
+    "value": "basic_page.json"
+  },
+  {
+    "id": "blog_landing_page",
+    "name": "Blog",
+    "repeatable": false,
+    "value": "blog_landing_page.json"
+  },
+  {
+    "id": "blog_post",
+    "name": "Blog Post",
+    "repeatable": true,
+    "value": "blog_post.json"
+  },
+  {
+    "id": "landing_page",
+    "name": "Landing Page",
+    "repeatable": false,
+    "value": "landing_page.json"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "e.g. bob-smith"
+      }
+    },
+    "author_name": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Author Name",
+        "placeholder": "Bob Smith"
+      }
+    }
+  }
+}
