@@ -1,0 +1,355 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "Home Page"
+      }
+    },
+    "page_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading4",
+        "label": "Page Title",
+        "placeholder": "Used to identify the page in Prismic"
+      }
+    },
+    "hero_title": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "heading1, heading2, strong, em",
+        "label": "Hero Title",
+        "placeholder": "Every clinical trial starts with - A question"
+      }
+    },
+    "hero_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1600,
+          "height": 900
+        },
+        "thumbnails": [],
+        "label": "Hero Image"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "two_up_left": {
+            "type": "Slice",
+            "fieldset": "Two Up - Left",
+            "description": "Image Left - Text Right",
+            "icon": "chrome_reader_mode",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 1600,
+                    "height": 900
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "small",
+                      "width": 600,
+                      "height": 900
+                    }
+                  ],
+                  "label": "Image"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "heading2",
+                  "label": "Title",
+                  "placeholder": "My title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "label": "Description",
+                  "placeholder": "My description"
+                }
+              },
+              "button_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Button label",
+                  "placeholder": "Click Here"
+                }
+              },
+              "button_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link",
+                  "placeholder": "Select the link"
+                }
+              }
+            },
+            "repeat": {},
+            "display": "list"
+          },
+          "two_up_right": {
+            "type": "Slice",
+            "fieldset": "Two Up - Right",
+            "description": "Text Left - Image Right",
+            "icon": "chrome_reader_mode",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 1600,
+                    "height": 900
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "small",
+                      "width": 600,
+                      "height": 900
+                    }
+                  ],
+                  "label": "Image"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "heading2",
+                  "label": "Title",
+                  "placeholder": "My title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "label": "Description",
+                  "placeholder": "My description"
+                }
+              },
+              "button_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Button label",
+                  "placeholder": "Click Here"
+                }
+              },
+              "button_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link",
+                  "placeholder": "Select the link"
+                }
+              }
+            },
+            "repeat": {},
+            "display": "list"
+          },
+          "three_up": {
+            "type": "Slice",
+            "fieldset": "Three Up",
+            "description": "Text top - image below x3",
+            "icon": "view_column",
+            "non-repeat": {
+              "column1_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "heading3, paragraph, strong, em",
+                  "label": "Text",
+                  "placeholder": "Column 1 Text"
+                }
+              },
+              "column1_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 1600,
+                    "height": 900
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "small",
+                      "width": 600,
+                      "height": 900
+                    }
+                  ],
+                  "label": "Column 1 Image"
+                }
+              },
+              "column2_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "heading3, paragraph, strong, em",
+                  "label": "Text",
+                  "placeholder": "Column 2 Text"
+                }
+              },
+              "column2_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 1600,
+                    "height": 900
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "small",
+                      "width": 600,
+                      "height": 900
+                    }
+                  ],
+                  "label": "Column 2 Image"
+                }
+              },
+              "column3_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "heading3, paragraph, strong, em",
+                  "label": "Text",
+                  "placeholder": "Column 3 Text"
+                }
+              },
+              "column3_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 1600,
+                    "height": 900
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "small",
+                      "width": 600,
+                      "height": 900
+                    }
+                  ],
+                  "label": "Column 3 Image"
+                }
+              }
+            },
+            "display": "list"
+          },
+          "quick_links": {
+            "type": "Slice",
+            "fieldset": "Quick Links",
+            "description": "Two buttons with sublines",
+            "icon": "chrome_reader_mode",
+            "non-repeat": {
+              "button_label1": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Button 1 label",
+                  "placeholder": "Click Here"
+                }
+              },
+              "button_1_subline": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Button 1 subline",
+                  "placeholder": "ie - Extra information about the link"
+                }
+              },
+              "button_link1": {
+                "type": "Link",
+                "config": {
+                  "label": "Button 1 Link",
+                  "placeholder": "Select the link"
+                }
+              },
+              "button_label2": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Button 2 label",
+                  "placeholder": "Click Here"
+                }
+              },
+              "button_2_subline": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Button 2 subline",
+                  "placeholder": "ie - Extra information about the link"
+                }
+              },
+              "button_link2": {
+                "type": "Link",
+                "config": {
+                  "label": "Button 2 Link",
+                  "placeholder": "Select the link"
+                }
+              }
+            },
+            "repeat": {},
+            "display": "list"
+          },
+          "quote": {
+            "type": "Slice",
+            "fieldset": "Quote",
+            "description": "Citeable Quote",
+            "icon": "chrome_reader_mode",
+            "non-repeat": {
+              "quotetext": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Quote text",
+                  "placeholder": "My quote from inpsirational person"
+                }
+              },
+              "quotee": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Person cited",
+                  "placeholder": "eg - Bob Smith"
+                }
+              }
+            },
+            "repeat": {},
+            "display": "list"
+          }
+        }
+      }
+    }
+  },
+  "SEO": {
+    "meta_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "meta_title"
+      }
+    },
+    "meta_desc": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "meta_desc"
+      }
+    },
+    "og_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1200,
+          "height": 630
+        },
+        "thumbnails": [],
+        "label": "og_image"
+      }
+    }
+  }
+}

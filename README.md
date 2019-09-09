@@ -7,5 +7,5 @@ Install the cli
 
 Create a new project from this theme
 
-    prismic theme git@github.com:HeroTeamLdn/prismic-nextjs-theme-website.git
+    prismic theme https://github.com/HeroTeamLdn/prismic-nextjs-theme-website
 
