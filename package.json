@@ -14,6 +14,7 @@
   "dependencies": {
     "@babel/node": "^7.6.1",
     "@zeit/next-sass": "^1.0.1",
+    "es6-object-assign": "^1.1.0",
     "next": "^9.0.0",
     "next-transpile-modules": "^2.3.1",
     "node-sass": "^4.12.0",
@@ -21,7 +22,7 @@
     "prismic-reactjs": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-global-hook": "^1.1.1"
+    "use-global-hook": "^0.1.10"
   },
   "devDependencies": {
     "express": "^4.17.1",

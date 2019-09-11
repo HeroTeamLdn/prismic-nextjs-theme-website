@@ -6,10 +6,10 @@ const isProd = process.env.STAGE === "production";
 module.exports = withTM(
   withCSS(
     withSass({
-      distDir: "build",
-      transpileModules: ["react-global-hook"],
+      target: "serverless",
+      transpileModules: ["use-global-hook"],
       generateBuildId: async () => {
-        return "projectname" + Date.now();
+        return "teckro" + Date.now();
       },
       webpack(config, options) {
         config.module.rules.push({
@@ -21,6 +21,20 @@ module.exports = withTM(
             }
           }
         });
+
+        const originalEntry = config.entry;
+        config.entry = async () => {
+          const entries = await originalEntry();
+
+          if (
+            entries["main.js"] &&
+            !entries["main.js"].includes("./polyfills.js")
+          ) {
+            entries["main.js"].unshift("./polyfills.js");
+          }
+
+          return entries;
+        };
 
         return config;
       }
