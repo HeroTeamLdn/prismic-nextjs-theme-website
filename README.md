@@ -25,6 +25,8 @@ You'll be directed through setup on the command line.
 
 Then log into Prismic in the browser and create some content within the repository you just created. 
 
+Update the contents of config.local.js with the endpoint and (if required) the api token to access the private Prismic repo.
+
 Run the build and see the content in your application.
 
 > **Delete from here up in the created project's README.md file**
