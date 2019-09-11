@@ -38,3 +38,12 @@ Run the build and see the content in your application.
 
     npm run dev
     
+## Deploying with Zeit Now
+
+Ensure you have the Now CLI
+
+    npm i -g now
+
+To deploy to Zeit run
+
+    now
