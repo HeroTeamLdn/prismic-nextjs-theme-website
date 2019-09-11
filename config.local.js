@@ -1,4 +1,4 @@
 export const PRISMIC_API_ENDPOINT =
-  "https://ht-berkeley-assets-website.prismic.io/api/v2";
+  "https://ht-website-test.cdn.prismic.io/api/v2";
 export const PRISMIC_API_TOKEN =
-  "MC5YWFlxZ3hBQUFDUUFDRTNp.77-977-977-977-977-9FXXvv73vv73vv70zEu-_ve-_vRvvv70h77-9MBcW77-977-9JO-_ve-_vSp-fw8Ffw";
+  "MC5YWGoxMEJBQUFDUUFGUkdD.HhXvv73vv71R77-9UgVE77-9PArvv73vv73vv73vv70IQ--_vX3vv73vv71r77-9cC9p77-9Iu-_vT8n";
