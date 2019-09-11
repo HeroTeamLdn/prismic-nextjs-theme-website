@@ -39,6 +39,23 @@
       "fieldset": "Slice zone",
       "config": {
         "choices": {
+          "text": {
+            "type": "Slice",
+            "fieldset": "Text",
+            "description": "Rich Text Section",
+            "icon": "text_fields",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "label": "text",
+                  "placeholder": "Your content here"
+                }
+              }
+            },
+            "repeat": {}
+          },
           "two_up_left": {
             "type": "Slice",
             "fieldset": "Two Up - Left",
