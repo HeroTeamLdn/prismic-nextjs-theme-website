@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { getPrismicApi } from "../utils/prismic";
+import { RichTextField, getPrismicApi } from "../utils/prismic";
 
 import useGlobal from "../store";
 
-// import AppContainer from "../components/AppContainer";
+import AppContainer from "../components/AppContainer";
 // import Hero from "../components/prismic/Hero";
 
 // import { PrismicComponentSwitcher } from "../components/prismic";
@@ -15,7 +15,15 @@ const Index = ({ uid, data }) => {
     globalActions.setPrismicData(uid, data);
   }, []);
 
-  return <>{prismicData[uid] && <>{console.log(prismicData)}</>}</>;
+  return (
+    <>
+      {prismicData[uid] && (
+        <AppContainer>
+          <RichTextField text={prismicData[uid].page_title}></RichTextField>
+        </AppContainer>
+      )}
+    </>
+  );
 };
 
 Index.getInitialProps = async ({ query }) => {

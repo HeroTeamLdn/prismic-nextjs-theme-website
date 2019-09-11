@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.app-body {
+  padding: 44px;
+}
+.app-container {
+  transition: padding 0.5s;
+  padding-left: 122px;
+  min-height: 100vh;
+  &.app-container_open {
+    padding-left: 326px;
+  }
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+@media (max-width: 1199px) {
+  .app-container.app-container_open {
+    padding-left: 122px;
+  }
+}
+
+@media (max-width: 767px) {
+  .app-container,
+  .app-container.app-container_open {
+    padding-left: 0;
+  }
+  .app-body {
+    padding: 22px;
+  }
+}
