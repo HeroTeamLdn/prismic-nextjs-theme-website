@@ -8,6 +8,7 @@ Blog Landing
 Blog Post
 Landing Page (also used for Home page)
 
+
 ## Before you start
 
 Install the cli
@@ -22,7 +23,7 @@ Install the cli
 
 You'll be directed through setup on the command line. 
 
-Create some content within the repository you just created.
+Then log into Prismic in the browser and create some content within the repository you just created. 
 
 Run the build and see the content in your application.
 
@@ -32,3 +33,4 @@ Run the build and see the content in your application.
 ## Running the build
 
     npm run dev
+    
