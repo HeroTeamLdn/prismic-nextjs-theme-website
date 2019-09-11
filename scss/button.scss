@@ -1,0 +1,121 @@
+@import "variables";
+
+.btn,
+.btn-secondary {
+  transition: all 0.2s;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid $orange;
+  color: $orange;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 30px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  &:hover {
+    border-color: $near-black;
+    color: $near-black;
+  }
+}
+
+.btn-secondary {
+  color: $near-black;
+  border-color: $mid-grey;
+  &:hover {
+    border-color: $near-black;
+  }
+}
+
+.btn-back {
+  transition: all 0.2s;
+  border: none;
+  position: relative;
+  padding-left: 40px;
+  color: $near-black;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background-image: url("/static/back-chevron.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    transition: all 0.2s;
+    color: $orange;
+    &:before {
+      background-image: url("/static/back-chevron-orange.svg");
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .btn,
+  .btn-secondary {
+    height: 36px;
+    line-height: 34px;
+    padding: 0 20px;
+    font-size: 11px;
+  }
+  .btn-back {
+    padding-left: 30px;
+    &:before {
+      top: 7px;
+    }
+  }
+}
+
+.btn-three {
+  transition: all 0.2s;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: $near-black;
+  border-bottom: 3px solid $near-black;
+  //height: 54px;
+  padding-right: 25px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.6rem;
+  width: 100%;
+  position: relative;
+  &:before {
+    transition: all 0.2s;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-image: url("/static/chevron-dark.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  &:after {
+    content: attr(data-secondary);
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin: 8px 0;
+  }
+  &:hover {
+    border-color: $orange;
+    color: $orange;
+    &:before {
+      background-image: url("/static/chevron-orange.svg");
+    }
+  }
+}

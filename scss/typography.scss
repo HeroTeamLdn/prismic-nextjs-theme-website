@@ -1,0 +1,111 @@
+@import "variables";
+@import "headings";
+
+body {
+  font-family: $fontHeading;
+  line-height: 1.1rem;
+  color: $near-black;
+}
+
+h1 {
+  @extend .heading01;
+}
+
+h2 {
+  @extend .heading02;
+}
+
+h3 {
+  @extend .heading03;
+}
+
+h4 {
+  @extend .heading04;
+}
+
+h5 {
+  @extend .heading04;
+}
+
+p,
+.paragraph {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rte,
+.richtext {
+  a:link {
+    color: $orange;
+    display: inline-block;
+    position: relative;
+    transition: 150ms color ease-in;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "";
+      transition: 150ms color ease-in;
+      border-bottom: 1px dotted $orange;
+    }
+  }
+  a:visited {
+    color: darken($orange, 15%);
+    &::before {
+      border-bottom: 1px dotted darken($orange, 15%);
+    }
+  }
+  a:hover {
+    color: lighten($orange, 15%);
+    &::before {
+      border-bottom: 1px dotted lighten($orange, 15%);
+    }
+  }
+
+  ul,
+  ol {
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      line-height: 1.2;
+      padding-left: 30px;
+      margin-bottom: 0.5em;
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+      font-weight: 400;
+      line-height: 1.6rem;
+      margin-top: 0;
+
+      &::before {
+        content: "";
+        background-image: url("/static/Bullet.svg");
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 5px;
+        bottom: 0;
+        left: 0;
+        // margin: auto;
+      }
+    }
+  }
+}

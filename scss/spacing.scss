@@ -1,0 +1,39 @@
+$spacing-sm: 20;
+$spacing-md: 60;
+$spacing-lg: 100;
+
+@function spacing($size) {
+  @if $size == "sm" {
+    @return $spacing-sm * 1px;
+  }
+  @if $size == "md" {
+    @return $spacing-md * 1px;
+  }
+  @if $size == "lg" {
+    @return $spacing-lg * 1px;
+  }
+}
+
+@mixin verticalSpacing($size) {
+  @if $size == "sm" {
+    margin-bottom: spacing("sm");
+  }
+  @if $size == "md" {
+    margin-bottom: spacing("md");
+  }
+  @if $size == "lg" {
+    margin-bottom: spacing("lg");
+  }
+}
+
+.spacing-sm {
+  @include verticalSpacing("sm");
+}
+
+.spacing-md {
+  @include verticalSpacing("md");
+}
+
+.spacing-lg {
+  @include verticalSpacing("lg");
+}

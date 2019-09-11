@@ -1,0 +1,70 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "variables";
+
+.heading01 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.4;
+
+  @include media-breakpoint-down(md) {
+    font-size: 2.3rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+  }
+}
+
+.heading02 {
+  font-weight: 200;
+  font-size: 2.125rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  color: $text-blue-light;
+
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.8rem;
+  }
+}
+
+.heading03 {
+  font-weight: 400;
+  font-size: 1.75rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.4;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+  }
+}
+
+.heading04 {
+  line-height: 1.46rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.heading05 {
+  line-height: 1.25rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.bloglistHeading {
+  font-weight: 200;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  color: $text-blue-light;
+  margin: 20px 0;
+}

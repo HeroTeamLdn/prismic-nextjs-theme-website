@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+$toggle-width: 60px;
+$toggle-height: 20px;
+
+.toggle {
+  cursor: pointer;
+  > div {
+    transition: all $transition;
+    width: $toggle-width;
+    height: $toggle-height;
+    display: block;
+    border: 2px solid $mid-grey;
+    background-color: $mid-grey;
+    border-radius: $toggle-height;
+    position: relative;
+    &:after {
+      transition: all $transition;
+      content: "";
+      width: $toggle-height - 6;
+      height: $toggle-height - 6;
+      display: block;
+      background-color: $orange;
+      border-radius: 50%;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+    }
+  }
+
+  > input {
+    display: none;
+    &:checked + div {
+      border-color: $light-orange;
+      background-color: $light-orange;
+      &:after {
+        left: $toggle-width - $toggle-height;
+      }
+    }
+  }
+}

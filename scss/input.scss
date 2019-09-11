@@ -1,0 +1,21 @@
+@import "variables";
+@import "spacing";
+
+.floating-label {
+	@include verticalSpacing("sm");
+	input, textarea {
+		background: transparent;
+		font-family: $fontHeading;
+		border-bottom: 1px solid $dark-grey !important;
+		color: $near-black;
+		outline: none;
+	}
+	input {
+		height: 50px;
+	}
+	span {
+		font-style: italic;
+		color: $dark-grey;
+		padding-top: 20px;
+	}
+}
