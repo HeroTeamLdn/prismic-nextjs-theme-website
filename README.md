@@ -23,7 +23,7 @@ Install the cli
 
 You'll be directed through setup on the command line. 
 
-> Always prefix the repo name with Hero Team initials eg `ht-` 
+> Repositories must always be unique (like a domiain name) - so always prefix the repo name with Hero Team initials eg `ht-` 
 
 Then log into Prismic in the browser and create some content within the repository you just created. 
 
