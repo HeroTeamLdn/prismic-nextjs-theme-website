@@ -23,6 +23,8 @@ Install the cli
 
 You'll be directed through setup on the command line. 
 
+> Always prefix the repo name with Hero Team initials eg `ht-` 
+
 Then log into Prismic in the browser and create some content within the repository you just created. 
 
 Update the contents of config.local.js with the endpoint and (if required) the api token to access the private Prismic repo.
