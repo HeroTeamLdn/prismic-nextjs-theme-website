@@ -3,10 +3,10 @@
 
 Use this theme to create a new prismic project with the following pages:
 
-Basic 
-Blog Landing
-Blog Post
-Landing Page (also used for Home page)
+- Basic 
+- Blog Landing
+- Blog Post
+- Landing Page (also used for Home page)
 
 
 ## Before you start
