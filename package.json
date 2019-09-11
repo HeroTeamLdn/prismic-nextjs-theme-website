@@ -4,7 +4,7 @@
   "description": "Strater kit theme for building standard website with landing page, blog and blog posts, with author and multiple slice types",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node server/index.js",
     "build": "next build",
     "deploy": "now"
   },
@@ -12,11 +12,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/node": "^7.6.1",
+    "@zeit/next-sass": "^1.0.1",
     "next": "^9.0.0",
+    "next-transpile-modules": "^2.3.1",
+    "prismic-javascript": "^2.1.1",
+    "prismic-reactjs": "^1.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-global-hook": "^1.1.1"
   },
   "devDependencies": {
-    "now": "^15.5.0"
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2",
+    "now": "^15.5.0",
+    "path": "^0.12.7",
+    "path-match": "^1.2.4"
   }
 }

@@ -1,4 +1,4 @@
 export const PRISMIC_API_ENDPOINT =
-  "https://teckrowebsite.cdn.prismic.io/api/v2";
+  "https://ht-berkeley-assets-website.prismic.io/api/v2";
 export const PRISMIC_API_TOKEN =
-  "MC5YV19RWWhFQUFDVUFGNHU3.77-9Ou-_ve-_ve-_vQgOJBPvv73vv73vv73vv73vv73vv73vv71V77-9YTtK77-977-9OFrvv70C77-977-977-9JEM";
+  "MC5YWFlxZ3hBQUFDUUFDRTNp.77-977-977-977-977-9FXXvv73vv73vv70zEu-_ve-_vRvvv70h77-9MBcW77-977-9JO-_ve-_vSp-fw8Ffw";
