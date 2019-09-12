@@ -1,0 +1,31 @@
+@import "../../scss/variables.scss";
+@import "../../scss/headings";
+
+div.blog-list-item {
+  border-bottom: 1px solid $mid-grey;
+  padding-bottom: 40px !important;
+  &:last-child {
+    border: none;
+  }
+}
+
+.blog-list-item-img {
+  width: 80%;
+  img {
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 250px;
+  }
+}
+
+.blog-list-item-type {
+  text-decoration: underline;
+}
+@media (min-width: 1600px) {
+  .d-xxl-block {
+    display: block !important;
+  }
+  .d-xxl-none {
+    display: none !important;
+  }
+}

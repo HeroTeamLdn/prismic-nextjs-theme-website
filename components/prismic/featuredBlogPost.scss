@@ -1,0 +1,53 @@
+@import "../../scss/variables.scss";
+@import "../../scss/spacing.scss";
+
+.featured-blogpost {
+  @include verticalSpacing("md");
+  padding-bottom: 40px !important;
+  border-bottom: 1px solid $mid-grey; 
+  h1 {
+    min-width: 0;
+  }
+  .featured {
+    color: $orange;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $orange;
+  }
+}
+
+.blogpost-topbar {
+  overflow: hidden;
+  padding-bottom: 8px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.featured-blogpost-img {
+  width: 80%;
+}
+
+.featured-blogpost-info {
+  margin-bottom: 5px;
+}
+
+.featured-blogpost-type {
+  //text-decoration: underline;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $mid-grey;
+}
+
+@media (max-width: 1440px) {
+  .featured-blogpost {
+    h1 {
+      min-width: 410px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .featured-blogpost {
+    h1 {
+      min-width: 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// @import "../../scss/_index";
+
+.blog-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.radiogroup,
+.selectGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
