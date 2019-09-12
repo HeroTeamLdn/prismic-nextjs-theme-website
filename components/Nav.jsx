@@ -13,8 +13,11 @@ const Nav = () => {
       </Link>
       <ul>
         <li>
-          <Link href="/blog" prefetch>
+          <Link href="/blog">
             <a>Blog</a>
+          </Link>
+          <Link href="/basic_page/terms-and-conditions">
+            <a>Terms &amp; Conditions</a>
           </Link>
         </li>
       </ul>
