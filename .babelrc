@@ -1,14 +1,14 @@
 {
   "presets": [
-    ["next/babel", { "transform-runtime": { "useESModules": false } }]
-    // [
-    //   "@babel/preset-env",
-    //   {
-    //     "targets": { "browsers": [">0.3%"] },
-    //     "modules": false,
-    //     "useBuiltIns": "usage"
-    //   }
-    // ]
+    ["next/babel", { "transform-runtime": { "useESModules": false } }],
+    [
+      "@babel/preset-env",
+      {
+        "targets": { "browsers": [">0.3%"] },
+        "modules": false,
+        "useBuiltIns": "usage"
+      }
+    ]
   ],
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
