@@ -41,7 +41,7 @@ const BlogListItem = ({ blogpost }) => (
         text={blogpost.data.body[0].primary.text[0].text}
       />
     </div>
-    <Link href="/blog/[uid]" as={`/blog/${blogpost.uid}`} prefetch>
+    <Link href="/blog/[uid]" as={`/blog/${blogpost.uid}`}>
       <a className="btn-secondary spacing-sm">CONTINUE</a>
     </Link>
   </div>
