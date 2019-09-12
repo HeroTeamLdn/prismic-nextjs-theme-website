@@ -106,10 +106,6 @@ Blog.getInitialProps = async ({ query }) => {
     tag: ""
   });
 
-  console.log("blogposts", blogposts);
-
-  //
-
   return { ...data, blogposts };
 };
 
