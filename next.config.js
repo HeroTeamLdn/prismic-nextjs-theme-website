@@ -7,7 +7,6 @@ module.exports = withTM(
   withCSS(
     withSass({
       target: "serverless",
-      distDir: "build",
       transpileModules: ["use-global-hook"],
       generateBuildId: async () => {
         return "app" + Date.now();
