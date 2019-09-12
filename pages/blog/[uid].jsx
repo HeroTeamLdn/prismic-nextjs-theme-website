@@ -15,7 +15,7 @@ const BlogPost = ({ uid, data }) => {
 
   useEffect(() => {
     globalActions.setPrismicData(uid, data);
-  }, []);
+  }, [uid]);
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
