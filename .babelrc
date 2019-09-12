@@ -1,3 +1,17 @@
 {
-  "presets": ["next/babel", "@babel/preset-env"]
+  "presets": [
+    ["next/babel", { "transform-runtime": { "useESModules": false } }],
+    [
+      "@babel/preset-env",
+      {
+        "targets": { "browsers": [">0.3%"] },
+        "modules": false,
+        "useBuiltIns": "usage"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-transform-object-assign"
+  ]
 }

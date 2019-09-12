@@ -7,9 +7,10 @@ module.exports = withTM(
   withCSS(
     withSass({
       target: "serverless",
+      distDir: "build",
       transpileModules: ["use-global-hook"],
       generateBuildId: async () => {
-        return "teckro" + Date.now();
+        return "app" + Date.now();
       },
       webpack(config, options) {
         config.module.rules.push({

@@ -6,6 +6,10 @@ import Nav from "../components/Nav";
 // import "../scss/_index.scss";
 
 export default class MyApp extends App {
+  constructor(props) {
+    super(props);
+  }
+
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
 
